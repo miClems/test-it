@@ -17,7 +17,7 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a class="failureGroup" href="#">Gradle Test Run :test</a>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
 </li>
 </ul>
 <div class="tab">
@@ -50,7 +50,7 @@
 </td>
 <td>
 <div class="infoBox">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -62,7 +62,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">3.368s</div>
+<div class="counter">4.836s</div>
 <p>duration</p>
 </div>
 </td>
@@ -71,25 +71,14 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures successRate">
-<div class="percent">0%</div>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="tab-container">
-<ul class="tabLinks">
-<li>
-<a class="" href="#">Failed</a>
-</li>
-<li>
-<a class="" href="#">All</a>
-</li>
-</ul>
-<div class="tab">
-<h2>Failed</h2>
 <table class="test-results sortable">
 <thead>
 <tr>
@@ -104,49 +93,18 @@
 </thead>
 <tbody>
 <tr>
-<td class="failures">
+<td class="success">
 <a href="test2().html">test2()</a>
 </td>
 <td class="path" hidden="">test2()</td>
 <td>1</td>
-<td>1</td>
 <td>0</td>
-<td data-sort-value="254">0.254s</td>
-<td class="failures" data-sort-value="0">0%</td>
+<td>0</td>
+<td data-sort-value="374">0.374s</td>
+<td class="success" data-sort-value="100">100%</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="tab">
-<h2>All</h2>
-<table class="test-results sortable">
-<thead>
-<tr>
-<th>Child</th>
-<th hidden="">Name</th>
-<th data-sort-default="desc">Tests</th>
-<th data-sort-default="desc">Failures</th>
-<th data-sort-default="desc">Skipped</th>
-<th data-sort-default="desc">Duration</th>
-<th>Success rate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="failures">
-<a href="test2().html">test2()</a>
-</td>
-<td class="path" hidden="">test2()</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td data-sort-value="254">0.254s</td>
-<td class="failures" data-sort-value="0">0%</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 </div>
 </div>
 <div class="tab">
@@ -155,10 +113,10 @@
 <div class="clipboard-copy-btn-container">
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.example.testit.BookRepositoryIT">Copy</button>
 </div>
-<pre id="root-0-test-stdout-com.example.testit.BookRepositoryIT">17:56:21.972 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.testit.BookRepositoryIT]: BookRepositoryIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:56:22.035 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.BookRepositoryIT
-17:56:22.071 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.testit.BookRepositoryIT]: BookRepositoryIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:56:22.072 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.BookRepositoryIT
+<pre id="root-0-test-stdout-com.example.testit.BookRepositoryIT">18:00:08.882 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.testit.BookRepositoryIT]: BookRepositoryIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:00:08.940 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.BookRepositoryIT
+18:00:08.972 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.testit.BookRepositoryIT]: BookRepositoryIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:00:08.973 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.testit.TestItApplication for test class com.example.testit.BookRepositoryIT
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -169,44 +127,44 @@
 
  :: Spring Boot ::                (v4.1.2)
 
-2026-11-13T17:56:22.200+01:00  INFO 109264 --- [    Test worker] com.example.testit.BookRepositoryIT      : Starting BookRepositoryIT using Java 25 with PID 109264 (started by clem in /home/clem/dev_fullstack/td_test/test-it)
-2026-11-13T17:56:22.201+01:00  INFO 109264 --- [    Test worker] com.example.testit.BookRepositoryIT      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-11-13T17:56:22.543+01:00  INFO 109264 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-11-13T17:56:22.571+01:00  INFO 109264 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
-2026-11-13T17:56:22.817+01:00  INFO 109264 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-11-13T17:56:22.915+01:00  INFO 109264 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-11-13T17:56:22.916+01:00  INFO 109264 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-11-13T17:56:22.951+01:00  INFO 109264 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
-2026-11-13T17:56:23.544+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
-2026-11-13T17:56:23.579+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
-2026-11-13T17:56:23.597+01:00  INFO 109264 --- [    Test worker] liquibase.snapshot                       : Creating snapshot
-2026-11-13T17:56:23.650+01:00  INFO 109264 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
-2026-11-13T17:56:23.651+01:00  INFO 109264 --- [    Test worker] liquibase.command                        : Using deploymentId: 4588982808
-2026-11-13T17:56:23.652+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
-2026-11-13T17:56:23.663+01:00  INFO 109264 --- [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/001-create-members-table.xml::001::testit
-2026-11-13T17:56:23.669+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Table members created
-2026-11-13T17:56:23.672+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to members (referent_id)
-2026-11-13T17:56:23.673+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/001-create-members-table.xml::001::testit ran successfully in 8ms
-2026-11-13T17:56:23.677+01:00  INFO 109264 --- [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/002-create-book-table.xml::002::testit
-2026-11-13T17:56:23.679+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Table book created
-2026-11-13T17:56:23.680+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to book (borrower_id)
-2026-11-13T17:56:23.680+01:00  INFO 109264 --- [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/002-create-book-table.xml::002::testit ran successfully in 3ms
-2026-11-13T17:56:23.687+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : UPDATE SUMMARY
-2026-11-13T17:56:23.687+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : Run:                          2
-2026-11-13T17:56:23.687+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : Previously run:               0
-2026-11-13T17:56:23.687+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : Filtered out:                 0
-2026-11-13T17:56:23.687+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : -------------------------------
-2026-11-13T17:56:23.687+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : Total change sets:            2
-2026-11-13T17:56:23.688+01:00  INFO 109264 --- [    Test worker] liquibase.util                           : Update summary generated
-2026-11-13T17:56:23.689+01:00  INFO 109264 --- [    Test worker] liquibase.command                        : Update command completed successfully.
-2026-11-13T17:56:23.689+01:00  INFO 109264 --- [    Test worker] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
-2026-11-13T17:56:23.691+01:00  INFO 109264 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
-2026-11-13T17:56:23.692+01:00  INFO 109264 --- [    Test worker] liquibase.command                        : Command execution complete
-2026-11-13T17:56:23.756+01:00  INFO 109264 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-11-13T17:56:23.781+01:00  INFO 109264 --- [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
-2026-11-13T17:56:23.963+01:00  INFO 109264 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-11-13T17:56:23.982+01:00  WARN 109264 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-11-13T17:56:23.989+01:00  INFO 109264 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-11-13T18:00:09.097+01:00  INFO 111880 --- [    Test worker] com.example.testit.BookRepositoryIT      : Starting BookRepositoryIT using Java 25 with PID 111880 (started by clem in /home/clem/dev_fullstack/td_test/test-it)
+2026-11-13T18:00:09.098+01:00  INFO 111880 --- [    Test worker] com.example.testit.BookRepositoryIT      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-11-13T18:00:09.386+01:00  INFO 111880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-13T18:00:09.419+01:00  INFO 111880 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2026-11-13T18:00:09.609+01:00  INFO 111880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-13T18:00:09.754+01:00  INFO 111880 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-11-13T18:00:09.756+01:00  INFO 111880 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-13T18:00:09.788+01:00  INFO 111880 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2026-11-13T18:00:11.682+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-11-13T18:00:11.748+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-11-13T18:00:11.770+01:00  INFO 111880 --- [    Test worker] liquibase.snapshot                       : Creating snapshot
+2026-11-13T18:00:11.837+01:00  INFO 111880 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2026-11-13T18:00:11.838+01:00  INFO 111880 --- [    Test worker] liquibase.command                        : Using deploymentId: 4589209600
+2026-11-13T18:00:11.840+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-11-13T18:00:11.862+01:00  INFO 111880 --- [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/001-create-members-table.xml::001::testit
+2026-11-13T18:00:11.871+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Table members created
+2026-11-13T18:00:11.877+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to members (referent_id)
+2026-11-13T18:00:11.879+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/001-create-members-table.xml::001::testit ran successfully in 14ms
+2026-11-13T18:00:11.885+01:00  INFO 111880 --- [    Test worker] liquibase.ui                             : Running Changeset: db/changelog/002-create-book-table.xml::002::testit
+2026-11-13T18:00:11.887+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Table book created
+2026-11-13T18:00:11.889+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to book (borrower_id)
+2026-11-13T18:00:11.889+01:00  INFO 111880 --- [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/002-create-book-table.xml::002::testit ran successfully in 4ms
+2026-11-13T18:00:11.893+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : UPDATE SUMMARY
+2026-11-13T18:00:11.893+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : Run:                          2
+2026-11-13T18:00:11.893+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : Previously run:               0
+2026-11-13T18:00:11.893+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : Filtered out:                 0
+2026-11-13T18:00:11.893+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : -------------------------------
+2026-11-13T18:00:11.893+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : Total change sets:            2
+2026-11-13T18:00:11.894+01:00  INFO 111880 --- [    Test worker] liquibase.util                           : Update summary generated
+2026-11-13T18:00:11.897+01:00  INFO 111880 --- [    Test worker] liquibase.command                        : Update command completed successfully.
+2026-11-13T18:00:11.898+01:00  INFO 111880 --- [    Test worker] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-11-13T18:00:11.900+01:00  INFO 111880 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2026-11-13T18:00:11.901+01:00  INFO 111880 --- [    Test worker] liquibase.command                        : Command execution complete
+2026-11-13T18:00:11.981+01:00  INFO 111880 --- [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-13T18:00:12.015+01:00  INFO 111880 --- [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-13T18:00:12.184+01:00  INFO 111880 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-13T18:00:12.204+01:00  WARN 111880 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-13T18:00:12.209+01:00  INFO 111880 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:mem:testdb]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -218,10 +176,10 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-11-13T17:56:24.385+01:00  INFO 109264 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-11-13T17:56:24.403+01:00  INFO 109264 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-11-13T17:56:24.446+01:00  INFO 109264 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-11-13T17:56:25.011+01:00  INFO 109264 --- [    Test worker] com.example.testit.BookRepositoryIT      : Started BookRepositoryIT in 2.909 seconds (process running for 3.45)
+2026-11-13T18:00:12.633+01:00  INFO 111880 --- [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-13T18:00:12.647+01:00  INFO 111880 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-13T18:00:12.697+01:00  INFO 111880 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-13T18:00:13.267+01:00  INFO 111880 --- [    Test worker] com.example.testit.BookRepositoryIT      : Started BookRepositoryIT in 4.267 seconds (process running for 4.821)
 </pre>
 </span>
 </div>
@@ -235,7 +193,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.9.1</a> at 13 nov. 2026, 17:56:25</p>
+<a href="https://www.gradle.org">Gradle 9.9.1</a> at 13 nov. 2026, 18:00:13</p>
 </div>
 </div>
 </body>

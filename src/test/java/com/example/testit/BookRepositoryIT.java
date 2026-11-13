@@ -27,13 +27,8 @@ public class BookRepositoryIT {
     @Test
     public void test2(){
         //given
-        Member member1 = new Member();
-        Member member2 = new Member();
-        member1.setId(1L);
-        member2.setId(2L);
-
-        memberRepository.save(member1);
-        memberRepository.save(member2);
+        Member member1 = memberRepository.save(new Member());
+        Member member2 = memberRepository.save(new Member());
 
         Book book1 = new Book();
         Book book2 = new Book();
@@ -56,8 +51,8 @@ public class BookRepositoryIT {
         bookRepository.save(book4);
 
         //when
-        List<Book> result1 = bookRepository.findByMemberAndStatus(1L, Status.EMPRUNTE);
-        List<Book> result2 = bookRepository.findByMemberAndStatus(2L, Status.EMPRUNTE);
+        List<Book> result1 = bookRepository.findByMemberAndStatus(member1.getId(), Status.EMPRUNTE);
+        List<Book> result2 = bookRepository.findByMemberAndStatus(member2.getId(), Status.EMPRUNTE);
         
         //then
         Assertions.assertThat(result1).extracting(Book::getId)
