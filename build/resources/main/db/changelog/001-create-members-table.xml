@@ -13,8 +13,8 @@
             <column name="user" type="varchar(255)">
                 <constraints unique="true" nullable="false"/>
             </column>
-            <column name="referent_id" type="uuid"/>
+            <column name="referent_id" type="bigint"/>
         </createTable>
-        <addForeignKeyConstraint baseTableName="members" baseColumnNames="referent_id" referencedTableName="members" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="members" baseColumnNames="referent_id" referencedTableName="members" referencedColumnNames="id" constraintName="borrowed"/>
     </changeSet>
 </databaseChangeLog>

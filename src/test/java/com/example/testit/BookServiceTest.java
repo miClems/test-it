@@ -1,7 +1,5 @@
 package com.example.testit;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.example.testit.adapter.mail.MailService;
 import com.example.testit.model.Book;
 import com.example.testit.model.Member;
